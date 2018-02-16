@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "About";
+}
+
+
+<form action="@Url.Action("sayhello","home")" method="post">
+
+    <input type="text" name="msg" value="" placeholder="enter msg here" /><br />
+
+    <input type="radio" name="scale" value="celcius" checked> celcius<br>
+    <input type="radio" name="scale" value="Farenheit"> Farenheit<br>
+    <input type="radio" name="scale" value="Kalvin"> Kalvin<br>
+
+
+    <input type="submit" value="send" />
+</form>
+
+
+
+@if (ViewBag.msg != null)
+{
+    <h3>@ViewBag.msg</h3>
+}
+
+    <div>
+        <div>
+            <h2>About</h2>
+            <p>I just started studying programming. C# at lexicon, i never done any programmering ever before i put my feet here. </p>
+            <br />
+            <p>before i started i was working for a management company i did all from cleaning stairs to working shifts</p>
+            <br />
+            <p>dont know what else to write so i guess that will do</p>
+
+        </div>
+</div>
+

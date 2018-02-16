@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Home</h2>
+
+<p>hello and welcome to my first webpage this is my home page</p>
+
+<table class="table-bordered table-striped">
+   
+
+
+    @for (int y = 1; y < 11; y++)
+    {
+    <tr>
+
+
+        @for (int x = 0; x < 11; x++)
+        {
+            <td>@(x * y)</td>
+        }
+
+    </tr>
+
+    }
+</table>

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Play";
+}
+
+<h2>Game</h2>
+
+<form method="post">
+    <input type="number" name="Number" value="" placeholder="Witch number is it?" /><br />
+
+
+    <input type="submit" value="send" />
+
+
+</form> 
+@if (ViewBag.Spel != null)
+{
+    <h3>@ViewBag.Spel</h3>
+
+    <h4>@ViewBag.Fries</h4>
+    <p></p>
+}
